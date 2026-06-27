@@ -1,0 +1,42 @@
+{
+  "name": "hubo-sse-client",
+  "version": "1.0.0",
+  "description": "Browser SSE client for Hubo — self-hosted multi-tenant SSE hub",
+  "author": "GBonnaire",
+  "license": "MIT",
+  "homepage": "https://github.com/GBonnaire/hubo-sse-client#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GBonnaire/hubo-sse-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GBonnaire/hubo-sse-client/issues"
+  },
+  "keywords": [
+    "sse",
+    "server-sent-events",
+    "real-time",
+    "hubo",
+    "mercure",
+    "browser",
+    "client"
+  ],
+  "main": "dist/hubo.min.js",
+  "module": "src/hubo.js",
+  "files": [
+    "src/",
+    "dist/"
+  ],
+  "exports": {
+    ".": {
+      "import": "./src/hubo.js",
+      "default": "./dist/hubo.min.js"
+    }
+  },
+  "scripts": {
+    "build": "npx terser src/hubo.js --compress --mangle --output dist/hubo.min.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

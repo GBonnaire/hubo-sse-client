@@ -7,7 +7,7 @@
   "homepage": "https://github.com/GBonnaire/hubo-sse-client#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GBonnaire/hubo-sse-client.git"
+    "url": "git+https://github.com/GBonnaire/hubo-sse-client.git"
   },
   "bugs": {
     "url": "https://github.com/GBonnaire/hubo-sse-client/issues"
